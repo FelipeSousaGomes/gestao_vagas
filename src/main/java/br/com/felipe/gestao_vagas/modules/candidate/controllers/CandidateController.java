@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import br.com.felipe.gestao_vagas.exceptions.UserFoundExcepetion;
-import br.com.felipe.gestao_vagas.modules.candidate.CandidateEntity;
 import br.com.felipe.gestao_vagas.modules.candidate.UsesCases.CreateCandidateUseCase;
+import br.com.felipe.gestao_vagas.modules.candidate.entitites.CandidateEntity;
 import jakarta.validation.Valid;
 
 

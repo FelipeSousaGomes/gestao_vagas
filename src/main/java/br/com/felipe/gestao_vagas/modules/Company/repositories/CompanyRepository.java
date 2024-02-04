@@ -1,12 +1,12 @@
-package br.com.felipe.gestao_vagas.modules.candidate.Company.repositories;
+package br.com.felipe.gestao_vagas.modules.Company.repositories;
 
 import java.util.Optional;
 import java.util.UUID;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import br.com.felipe.gestao_vagas.modules.candidate.CandidateEntity;
-import br.com.felipe.gestao_vagas.modules.candidate.Company.CompanyEntity;
+import br.com.felipe.gestao_vagas.modules.Company.Entities.CompanyEntity;
+import br.com.felipe.gestao_vagas.modules.candidate.entitites.CandidateEntity;
 
 public interface CompanyRepository extends JpaRepository<CompanyEntity,UUID> {
       Optional<CompanyEntity>findByUsernameOrEmail(String usename, String email);

@@ -1,10 +1,10 @@
-package br.com.felipe.gestao_vagas.modules.candidate;
+package br.com.felipe.gestao_vagas.modules.Company.Entities;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.UUID;
 
 import org.hibernate.annotations.CreationTimestamp;
-import org.hibernate.annotations.DialectOverride.GeneratedColumns;
 import org.hibernate.validator.constraints.Length;
 
 import jakarta.persistence.Entity;
@@ -16,17 +16,14 @@ import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Pattern;
 import lombok.Data;
 
-
 @Data
-@Entity(name = "candidate")
-public class CandidateEntity {
-    
-    @Id
-    @GeneratedValue(strategy = GenerationType.UUID)
-    private UUID id;
-    private String name;
+@Entity(name = "compány")
+public class CompanyEntity {
 
-    @NotBlank
+@Id
+@GeneratedValue(strategy = GenerationType.UUID)
+    private UUID id;
+     @NotBlank
     @Pattern(regexp = "\\S+", message = "O campo não aceita espaço")
     private String username;
     @Email(message = "O campo email deve conter um e-mail válido")
@@ -34,8 +31,11 @@ public class CandidateEntity {
 
     @Length(min = 10, max = 100, message = "o campo deve ser de 10 a 100")
     private String password;
-    private String curriculum;
-
+    private String website;
+    private String name;
+    private String description;
+    
     @CreationTimestamp
     private LocalDateTime createdAt;
 }
+

@@ -1,4 +1,4 @@
-package br.com.felipe.gestao_vagas.modules.candidate.Company;
+package br.com.felipe.gestao_vagas.modules.Company.Entities;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;

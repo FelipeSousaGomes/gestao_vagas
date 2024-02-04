@@ -1,11 +1,11 @@
-package br.com.felipe.gestao_vagas.modules.candidate.Company.useCases;
+package br.com.felipe.gestao_vagas.modules.Company.useCases;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import br.com.felipe.gestao_vagas.exceptions.UserFoundExcepetion;
-import br.com.felipe.gestao_vagas.modules.candidate.Company.CompanyEntity;
-import br.com.felipe.gestao_vagas.modules.candidate.Company.repositories.CompanyRepository;
+import br.com.felipe.gestao_vagas.modules.Company.Entities.CompanyEntity;
+import br.com.felipe.gestao_vagas.modules.Company.repositories.CompanyRepository;
 
 @Service
 public class CreateCompanyUseCase {
